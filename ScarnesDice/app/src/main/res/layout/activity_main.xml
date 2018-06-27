@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tv_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Welcome to the game"
+         />
+
+    <ImageView
+        android:id="@+id/dice_image"
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/dice1"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="45dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:text="ROLL"
+            android:id="@+id/roll_button"
+            android:onClick="rollButtonClick"
+            android:layout_marginRight="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <Button
+        android:text="HOLD"
+        android:id="@+id/hold_button"
+        android:onClick="holdButtonClick"
+        android:layout_width="wrap_content"
+        android:layout_marginRight="15dp"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:text="RESET"
+        android:id="@+id/rest_button"
+        android:onClick="resetButtonClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/winner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+</LinearLayout>
